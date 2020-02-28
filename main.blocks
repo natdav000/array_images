@@ -1,0 +1,35 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="!l8EmL%go+%j@-BCFJ)R">Player</variable><variable type="KIND_SpriteKind" id="BuW4B+v5:x:.AHy*bx^)">Projectile</variable><variable type="KIND_SpriteKind" id="+#m/@k)IlY(b;YEmCX~1">Food</variable><variable type="KIND_SpriteKind" id="cB6PK1;J-CW;=r]V4#4S">Enemy</variable><variable id="@q/04,/M5N:E7xp7`6a$">text list</variable><variable id="~e^Npy?mi1y3VQBd=_Qi">list</variable><variable id="hCRjp?H;vlc.=Jf?3nwu">bat</variable><variable id="Jx$ZZX@@E8JteFwv8%yO">mySprite</variable><variable id="P9m0sTr8PGXs7@U!i1(G">character_images</variable><variable id="8H^s][CdW+D[*~iuWLq:">count</variable></variables><block type="gameinterval" id="3=^U/RAa;$de(vQloC.Q" x="390" y="-30"><value name="period"><shadow type="timePicker" id="yU8P%zzE+s|6L9`OtV-o"><field name="ms">200</field></shadow></value><statement name="HANDLER"><block type="spritesetimage" id="=^^8DQcVbGB_e0.Eaz^u"><value name="sprite"><block type="variables_get" id="VZm[KZ`R_S$u{1p(zkk*"><field name="VAR" id="hCRjp?H;vlc.=Jf?3nwu">bat</field></block></value><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow><block type="lists_index_get" id="~?m?dYkwGg|.[Kdfqv(_"><value name="LIST"><block type="variables_get" id="QFr[snKS9,wBNBfC)Gwp"><field name="VAR" id="~e^Npy?mi1y3VQBd=_Qi">list</field></block></value><value name="INDEX"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="math_modulo" id="Nd,^[Zr#k$D^i4`CqP,y"><value name="DIVIDEND"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="2@g)^(Ai!iu^rsH;D)nJ"><field name="VAR" id="8H^s][CdW+D[*~iuWLq:">count</field></block></value><value name="DIVISOR"><shadow type="math_number"><field name="NUM">1</field></shadow><block type="lists_length" id="}f_f2#d!l*L(D!9$8O2A"><value name="VALUE"><block type="variables_get" id="`Y-BXVkpMntsUyNM$/Hv"><field name="VAR" id="~e^Npy?mi1y3VQBd=_Qi">list</field></block></value></block></value></block></value></block></value><next><block type="variables_change" id="CPjW=HSc,_bcSzCux){7"><field name="VAR" id="8H^s][CdW+D[*~iuWLq:">count</field><value name="VALUE"><shadow type="math_number" id="af8pQTy:rv[-Oocr~Gx?"><field name="NUM">1</field></shadow></value></block></next></block></statement></block><block type="pxt-on-start" id="M-io+b})WqQ2ETZld16Z" x="0" y="0"><statement name="HANDLER"><block type="variables_set" id="UHimg`Ys(V5r`[)?5hKm"><field name="VAR" id="~e^Npy?mi1y3VQBd=_Qi">list</field><value name="VALUE"><block type="lists_create_with" id="5^D2,yO;Gl1]_pf%.Vna" inline="false"><mutation items="8"/><value name="ADD0"><shadow type="text"><field name="TEXT">a</field></shadow><block type="image_picker" id="4{[0cCFp`M=Q%=%v/eYc"><field name="image">sprites.builtin.forestBat0</field></block></value><value name="ADD1"><shadow type="text"><field name="TEXT">b</field></shadow><block type="image_picker" id=")3)mn{{e:.xU0^y4tmST"><field name="image">sprites.builtin.forestBat1</field></block></value><value name="ADD2"><shadow type="text"><field name="TEXT">c</field></shadow><block type="image_picker" id="FiHRuOBbdO=#^A+j%oH0"><field name="image">sprites.builtin.forestBat2</field></block></value><value name="ADD3"><shadow type="text"><field name="TEXT"/></shadow><block type="image_picker" id="0+/+u9uD{3Tnd!Mpbf@I"><field name="image">sprites.builtin.forestBat3</field></block></value><value name="ADD4"><shadow type="text"><field name="TEXT"/></shadow><block type="image_picker" id="f@;kP/7LzK-k:j+3wai("><field name="image">sprites.builtin.forestBat4</field></block></value><value name="ADD5"><shadow type="text"><field name="TEXT"/></shadow><block type="image_picker" id="r(-JYf3=%b#33yi{w8/j"><field name="image">sprites.builtin.forestBat5</field></block></value><value name="ADD6"><shadow type="text"><field name="TEXT"/></shadow><block type="image_picker" id="65ubX!^03fZhT^mw,SH;"><field name="image">sprites.builtin.forestBat6</field></block></value><value name="ADD7"><shadow type="text"><field name="TEXT"/></shadow><block type="image_picker" id="C|]]L7xs/mOeE1`#6+Z|"><field name="image">sprites.builtin.forestBat7</field></block></value></block></value><next><block type="variables_set" id="Umt.u~TVn4-mS6sgz7,y"><field name="VAR" id="hCRjp?H;vlc.=Jf?3nwu">bat</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="rdp}v9h1h$yT]0POF[];"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow><block type="lists_index_get" id="(m|F:i7:TV{!q{DHxBtK"><value name="LIST"><block type="variables_get" id="*@x`FG#`E/zx-{up|r9h"><field name="VAR" id="~e^Npy?mi1y3VQBd=_Qi">list</field></block></value><value name="INDEX"><shadow type="math_number" id="qhA4JR0q~LA@zxU$^Waw"><field name="NUM">0</field></shadow></value></block></value><value name="kind"><shadow type="spritekind" id="5V^W];I)pZJZ%M]y/js?"><field name="MEMBER">Player</field></shadow></value></block></value></block></next></block></statement></block></xml>
